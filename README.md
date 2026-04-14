@@ -76,35 +76,6 @@ PROJET_ML_RTA/
 
 ---
 
-## Installation et Lancement
-
-**1. Cloner le dépôt**
-```bash
-git clone https://github.com/[votre-username]/rta-accident-severity.git
-cd rta-accident-severity
-```
-
-**2. Installer les dépendances**
-```bash
-pip install -r requirements.txt
-```
-
-**3. Placer le dataset**
-Déposer `RTA Dataset.csv` dans le dossier `Data/`.
-
-**4. Lancer les notebooks dans l'ordre**
-```bash
-jupyter notebook
-```
-→ `01_EDA_final.ipynb` en premier, puis `02_Modeling_final.ipynb`
-
-**5. Lancer l'application Streamlit (bonus)**
-```bash
-streamlit run app.py
-```
-
----
-
 ## Démarche Méthodologique
 
 ### Chargement et Échantillonnage
