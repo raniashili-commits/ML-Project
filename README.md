@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| **Nom** | Rania Shili |
+| **Nom** | Rania Shili|
 | **Module** | Machine Learning |
 | **Encadrant** | M. Abdallah Khemais |
 | **Année** | 2025 – 2026 |
@@ -76,8 +76,32 @@ PROJET_ML_RTA/
 
 ---
 
+## Installation et Lancement
 
+**1. Cloner le dépôt**
+```bash
+git clone https://github.com/[votre-username]/rta-accident-severity.git
+cd rta-accident-severity
+```
 
+**2. Installer les dépendances**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Placer le dataset**
+Déposer `RTA Dataset.csv` dans le dossier `Data/`.
+
+**4. Lancer les notebooks dans l'ordre**
+```bash
+jupyter notebook
+```
+→ `01_EDA_final.ipynb` en premier, puis `02_Modeling_final.ipynb`
+
+**5. Lancer l'application Streamlit (bonus)**
+```bash
+streamlit run app.py
+```
 
 ---
 
@@ -138,13 +162,15 @@ param_grid = {
 
 ## Résultats
 
-                    CV F1-macro  Accuracy    Precision  Recall  ROC-AUC
-Modele                                                                          
-Logistic Regression       0.3188    0.5217    0.3698  0.5216   0.6083
-Decision Tree             0.3621    0.7300    0.4217  0.4862   0.6066
-Random Forest             0.3037    0.8367    0.2789  0.3333   0.6895
-| **RF + GridSearchCV** |  0.4732 | 0.8050|   0.6571| 0.7009 | 0.6571
+## Résultats de la Modélisation
 
+
+| Modèle | Accuracy | F1-macro | Precision | Recall | ROC-AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Logistic Regression | 0.8357 | 0.3241 | 0.3121 | 0.3391 | 0.5822 |
+| Decision Tree | 0.7212 | 0.3855 | 0.3913 | 0.3802 | 0.6146 |
+| Random Forest | 0.8421 | 0.3413 | 0.3522 | 0.3311 | 0.6413 |
+| **RF + GridSearchCV** ⭐ | **0.8493** | **0.4529** | **0.4486** | **0.4611** | **0.7143** |
 > Valeurs à compléter après exécution complète du notebook `02_Modeling_final.ipynb`.
 
 ---
