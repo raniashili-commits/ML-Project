@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| **Nom** | [Votre Nom] |
+| **Nom** | Rania Shili |
 | **Module** | Machine Learning |
 | **Encadrant** | M. Abdallah Khemais |
 | **Année** | 2025 – 2026 |
@@ -60,48 +60,24 @@ PROJET_ML_RTA/
 │   └── df_eda_ready.csv             # Données préparées après EDA
 │
 ├── notebooks/
-│   ├── 01_EDA.ipynb                 # Brouillon EDA — explorations initiales
+│   ├── 01_EDA.ipynb                 # Brouillon EDA 
 │   ├── 01_EDA_final.ipynb           # EDA final soigné et commenté
-│   ├── 02_Modeling.ipynb            # Brouillon modélisation — expérimentations
+│   ├── 02_Modeling.ipynb            # Brouillon modélisation 
 │   └── 02_Modeling_final.ipynb      # Modélisation finale complète
 │
 ├── src/
 │   ├── best_model_rf.pkl            # Modèle Random Forest sérialisé
 │   └── label_encoder.pkl            # Encodeur de la variable cible
 │
-├── app.py                           # Application Streamlit (bonus)
+├── app.py                           # Application Streamlit 
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## Installation et Lancement
 
-**1. Cloner le dépôt**
-```bash
-git clone https://github.com/[votre-username]/rta-accident-severity.git
-cd rta-accident-severity
-```
 
-**2. Installer les dépendances**
-```bash
-pip install -r requirements.txt
-```
-
-**3. Placer le dataset**
-Déposer `RTA Dataset.csv` dans le dossier `Data/`.
-
-**4. Lancer les notebooks dans l'ordre**
-```bash
-jupyter notebook
-```
-→ `01_EDA_final.ipynb` en premier, puis `02_Modeling_final.ipynb`
-
-**5. Lancer l'application Streamlit (bonus)**
-```bash
-streamlit run app.py
-```
 
 ---
 
@@ -162,12 +138,12 @@ param_grid = {
 
 ## Résultats
 
-| Modèle | Accuracy | F1-macro | Precision | Recall | ROC-AUC |
-|--------|:--------:|:--------:|:---------:|:------:|:-------:|
-| Logistic Regression | — | — | — | — | — |
-| Decision Tree | — | — | — | — | — |
-| Random Forest | — | — | — | — | — |
-| **RF + GridSearchCV** | **—** | **—** | **—** | **—** | **—** |
+                    CV F1-macro  Accuracy    Precision  Recall  ROC-AUC
+Modele                                                                          
+Logistic Regression       0.3188    0.5217    0.3698  0.5216   0.6083
+Decision Tree             0.3621    0.7300    0.4217  0.4862   0.6066
+Random Forest             0.3037    0.8367    0.2789  0.3333   0.6895
+| **RF + GridSearchCV** |  0.4732 | 0.8050|   0.6571| 0.7009 | 0.6571
 
 > Valeurs à compléter après exécution complète du notebook `02_Modeling_final.ipynb`.
 
